@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    /* Premium dark mode colors */
+    --background: 222 47% 11%; /* Deep blue-gray background */
+    --foreground: 210 40% 98%; /* Off-white text for better readability */
+    --card: 223 47% 14%; /* Slightly lighter than background for cards */
+    --card-foreground: 210 40% 98%;
+    --popover: 223 47% 14%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%; /* Vibrant blue for primary elements */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 32% 17%; /* Darker blue for secondary elements */
+    --secondary-foreground: 210 40% 98%;
+    --muted: 223 47% 20%; /* Slightly lighter for muted areas */
+    --muted-foreground: 215 20% 65%; /* Softer text for muted areas */
+    --accent: 217 91% 60%; /* Same as primary for consistency */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%; /* Keep destructive red */
+    --destructive-foreground: 210 40% 98%;
+    --border: 216 34% 17%; /* Subtle border color */
+    --input: 216 34% 17%;
+    --ring: 224 76% 48%;
+    /* Chart colors - more vibrant for dark mode */
+    --chart-1: 217 91% 60%;
+    --chart-2: 190 80% 50%;
+    --chart-3: 43 96% 58%;
+    --chart-4: 280 75% 60%;
+    --chart-5: 340 82% 52%;
+    /* Sidebar colors */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 223 47% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 216 34% 17%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add this to the end of the file to increase font sizes globally */
+html {
+  font-size: 20px; /* Increase base font size from 18px to 20px */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem; /* Increased from 2.5rem */
+}
+h2 {
+  font-size: 2.5rem; /* Increased from 2rem */
+}
+h3 {
+  font-size: 2rem; /* Increased from 1.75rem */
+}
+h4 {
+  font-size: 1.75rem; /* Increased from 1.5rem */
+}
+h5 {
+  font-size: 1.5rem; /* Increased from 1.25rem */
+}
+h6 {
+  font-size: 1.25rem; /* Increased from 1rem */
+}
+
+p,
+li,
+a,
+button,
+input,
+textarea {
+  font-size: 1.15rem; /* Increased from 1.05rem */
+}
+
+/* Premium styling for dark mode */
+.dark body {
+  background: linear-gradient(to bottom, hsl(222 47% 11%), hsl(225 50% 9%));
+  min-height: 100vh;
+}
+
+.dark .card {
+  background: hsl(223 47% 14%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid hsl(216 34% 17%);
+}
+
+.dark .bg-gray-800 {
+  background-color: hsl(222 47% 11%);
+}
+
+.dark .bg-gray-900 {
+  background-color: hsl(225 50% 9%);
+}
+
+.dark .bg-gray-700 {
+  background-color: hsl(223 47% 18%);
+}
+
+.dark .bg-gray-50 {
+  background-color: hsl(223 47% 14%);
+}
+
+/* Button styling in dark mode */
+.dark .bg-blue-600 {
+  background-color: hsl(217 91% 60%);
+}
+
+.dark .bg-blue-700:hover {
+  background-color: hsl(217 91% 55%);
+}
+
+.dark .bg-orange-500 {
+  background-color: hsl(24 95% 60%);
+}
+
+.dark .bg-orange-600:hover {
+  background-color: hsl(24 95% 55%);
+}
+
+/* Input styling in dark mode */
+.dark input,
+.dark textarea {
+  background-color: hsl(223 47% 18%);
+  border-color: hsl(216 34% 22%);
+  color: hsl(210 40% 98%);
+}
+
+.dark input:focus,
+.dark textarea:focus {
+  border-color: hsl(217 91% 60%);
+  box-shadow: 0 0 0 2px hsla(217, 91%, 60%, 0.3);
+}
+
+/* Premium accent for dark mode */
+.dark .text-blue-400,
+.dark .hover\:text-blue-400:hover {
+  color: hsl(217 91% 60%);
+}
+
+.dark .text-orange-500 {
+  color: hsl(24 95% 60%);
+}
