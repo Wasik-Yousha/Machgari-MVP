@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from './ui/button'
 import { Card } from './ui/card'
+import { Bug, X, RefreshCw, Trash2, Zap } from 'lucide-react'
 
 export function LocalStorageDebugger() {
   const [storageData, setStorageData] = useState<Record<string, any>>({})
@@ -165,57 +166,95 @@ export function LocalStorageDebugger() {
 
   if (!visible) {
     return (
-      <div className="fixed bottom-4 right-4 z-50">
-        <Button variant="outline" size="sm" onClick={() => setVisible(true)}>
-          Debug Storage
+      <div className="fixed top-4 right-4 z-[9999]">
+        <Button 
+          variant="outline" 
+          size="sm" 
+          onClick={() => setVisible(true)}
+          className="bg-gradient-to-r from-primary to-secondary text-white border-none hover:from-primary/90 hover:to-secondary/90 shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
+        >
+          <Bug className="h-4 w-4 mr-2" />
+          Debug
         </Button>
       </div>
     )
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 w-96 max-h-[80vh] overflow-auto">
-      <Card className="p-4 shadow-lg bg-white dark:bg-gray-800">
-        <div className="flex justify-between items-center mb-4">
-          <h3 className="text-lg font-semibold">LocalStorage Debug</h3>
-          <div className="space-x-2">
-            <Button variant="outline" size="sm" onClick={refreshStorageData}>
-              Refresh
+    <div className="fixed top-4 right-4 z-[9999] w-96 max-h-[85vh] overflow-hidden">
+      <Card className="shadow-2xl bg-white dark:bg-gray-800 border-2 border-primary/20 dark:border-primary/30 rounded-xl overflow-hidden">
+        {/* Header with gradient */}
+        <div className="bg-gradient-to-r from-primary to-secondary text-white p-4">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center space-x-2">
+              <Bug className="h-5 w-5" />
+              <h3 className="text-lg font-bold">Storage Debug</h3>
+            </div>
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              onClick={() => setVisible(false)}
+              className="text-white hover:bg-white/20 h-8 w-8 p-0"
+            >
+              <X className="h-4 w-4" />
             </Button>
-            <Button variant="destructive" size="sm" onClick={resetAllData}>
-              Reset Data
-            </Button>
-            <Button variant="outline" size="sm" onClick={() => setVisible(false)}>
-              Close
-            </Button>
+          </div>
+          <div className="text-xs text-white/80 mt-1">
+            Last updated: {lastUpdated}
           </div>
         </div>
         
-        <div className="mb-2 text-xs text-gray-500">
-          Last updated: {lastUpdated}
-        </div>
-        
-        <div className="space-y-2 mb-4">
-          <Button variant="outline" size="sm" onClick={forceDispatchStorageEvent} className="w-full">
-            Force Update All Components
+        {/* Content area with scroll */}
+        <div className="p-4 max-h-[calc(85vh-140px)] overflow-y-auto">
+          {/* Action buttons */}
+          <div className="grid grid-cols-2 gap-2 mb-4">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={refreshStorageData}
+              className="border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors"
+            >
+              <RefreshCw className="h-3 w-3 mr-1" />
+              Refresh
+            </Button>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={resetAllData}
+              className="border-destructive text-destructive hover:bg-destructive hover:text-white transition-colors"
+            >
+              <Trash2 className="h-3 w-3 mr-1" />
+              Reset
+            </Button>
+          </div>
+          
+          <Button 
+            variant="outline" 
+            size="sm" 
+            onClick={forceDispatchStorageEvent} 
+            className="w-full mb-4 border-primary text-primary hover:bg-primary hover:text-white transition-colors"
+          >
+            <Zap className="h-3 w-3 mr-1" />
+            Force Update Components
           </Button>
-        </div>
-        
-        <div className="space-y-4">
-          {Object.keys(storageData).length === 0 ? (
-            <p className="text-sm text-gray-500">No localStorage data found</p>
-          ) : (
-            Object.entries(storageData).map(([key, value]) => (
-              <div key={key} className="border-b pb-2">
-                <div className="font-medium">{key}</div>
-                <div className="text-sm text-gray-500 overflow-hidden">
-                  {typeof value === 'object' && value !== null
-                    ? JSON.stringify(value)
-                    : String(value)}
+          
+          {/* Data display */}
+          <div className="space-y-3">
+            {Object.keys(storageData).length === 0 ? (
+              <p className="text-sm text-gray-500 text-center py-4">No localStorage data found</p>
+            ) : (
+              Object.entries(storageData).map(([key, value]) => (
+                <div key={key} className="border-l-4 border-primary/30 bg-gray-50 dark:bg-gray-900/50 p-3 rounded-r-lg">
+                  <div className="font-semibold text-sm text-gray-800 dark:text-gray-200 mb-1">{key}</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400 overflow-hidden break-words">
+                    {typeof value === 'object' && value !== null
+                      ? JSON.stringify(value, null, 2)
+                      : String(value)}
+                  </div>
                 </div>
-              </div>
-            ))
-          )}
+              ))
+            )}
+          </div>
         </div>
       </Card>
     </div>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { ImageSlider } from "@/components/image-slider";
 import { MarketSummarySection } from "@/components/market-summary-section";
 import { ContactForm } from "@/components/contact-form";
@@ -32,7 +32,7 @@ export default function HomePage() {
         {/* Dashboard Section */}
         <section className="py-12 bg-gray-50 dark:bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 dark:text-white">
               মাছের বাজার দর
             </h2>
 
@@ -43,7 +43,7 @@ export default function HomePage() {
         {/* YouTube Video Section */}
         <section className="py-12 bg-white dark:bg-secondary">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 dark:text-white">
               কিভাবে মাছগাড়ি ব্যবহার করবেন
             </h2>
 
@@ -117,6 +117,10 @@ export default function HomePage() {
                     <li className="flex items-start">
                       <span className="text-green-500 mr-2">✓</span>
                       <span>রিয়েল-টাইম দাম তথ্য</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-purple-500 mr-2">🤖</span>
+                      <span className="font-semibold text-purple-700 dark:text-purple-400">AI পরামর্শদাতা ২৪/৭ সহায়তা</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -201,20 +205,20 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Contact Form */}
               <div>
-                <h2 className="text-2xl font-bold mb-4">যোগাযোগ করুন</h2>
+                <h2 className="text-2xl font-bold mb-4 dark:text-white">যোগাযোগ করুন</h2>
                 <ContactForm />
               </div>
 
               {/* Additional Info */}
               <div className="flex flex-col justify-center">
-                <h2 className="text-2xl font-bold mb-4">কেন মাছগাড়ি?</h2>
+                <h2 className="text-2xl font-bold mb-4 dark:text-white">কেন মাছগাড়ি?</h2>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <span className="text-green-600 dark:text-green-400">✓</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">সম্পূর্ণ স্বচ্ছতা</h3>
+                      <h3 className="font-semibold mb-1 dark:text-white">সম্পূর্ণ স্বচ্ছতা</h3>
                       <p className="text-sm text-gray-600 dark:text-gray-400">প্রতিটি লেনদেন ডিজিটালি রেকর্ড এবং ট্র্যাক করা হয়</p>
                     </div>
                   </div>
@@ -223,7 +227,7 @@ export default function HomePage() {
                       <span className="text-blue-600 dark:text-blue-400">✓</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">দ্রুত ও সহজ</h3>
+                      <h3 className="font-semibold mb-1 dark:text-white">দ্রুত ও সহজ</h3>
                       <p className="text-sm text-gray-600 dark:text-gray-400">মোবাইল অ্যাপের মাধ্যমে যেকোনো সময় ব্যবহার করুন</p>
                     </div>
                   </div>
@@ -232,7 +236,7 @@ export default function HomePage() {
                       <span className="text-purple-600 dark:text-purple-400">✓</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">নিরাপদ পেমেন্ট</h3>
+                      <h3 className="font-semibold mb-1 dark:text-white">নিরাপদ পেমেন্ট</h3>
                       <p className="text-sm text-gray-600 dark:text-gray-400">সুরক্ষিত ডিজিটাল পেমেন্ট সিস্টেম</p>
                     </div>
                   </div>
