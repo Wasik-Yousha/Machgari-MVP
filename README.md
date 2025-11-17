@@ -2,7 +2,7 @@
 
 > **Live Demo**: [https://machgari-mvp.vercel.app](https://machgari-mvp.vercel.app)
 
-⚠️ **IMPORTANT**: This is proprietary software. **All Rights Reserved**. Viewing only - no copying, modification, or use without permission. Contact [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com) for licensing.
+📖 **Code available for viewing and learning** • All Rights Reserved • [Contact for licensing](mailto:24engineers.tech@gmail.com)
 
 [![Deploy Status](https://img.shields.io/badge/deploy-success-brightgreen)](https://machgari-mvp.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
@@ -332,17 +332,29 @@ This project and its code are **proprietary and confidential**.
 - ❌ **No modification** - You may NOT modify or create derivative works
 - ❌ **No distribution** - You may NOT distribute or share this code
 
-### ✅ Viewing Only
+### ✅ What You Can Do
 
-This repository is **public for portfolio demonstration purposes only**. You may:
-- ✅ View the code for learning
-- ✅ View the live demo at [machgari-mvp.vercel.app](https://machgari-mvp.vercel.app)
-- ✅ Star the repository
+- 📖 **View and learn** from the code
+- ⭐ **Star the repository** if you find it useful
+- 🌐 **Try the live demo** at [machgari-mvp.vercel.app](https://machgari-mvp.vercel.app)
+- 💬 **Provide feedback** and suggestions
+- 📧 **Contact me** for collaboration opportunities
 
-### � License Requests
+### 📋 Restrictions
 
-For licensing inquiries or permission to use this code, contact:
-**[24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)**
+To protect the intellectual property, the following require **written permission**:
+- Using this code in your own projects
+- Creating derivative works
+- Commercial use
+- Distribution or redistribution
+
+### 📧 Licensing & Collaboration
+
+Interested in using this project or collaborating? I'd love to hear from you!
+
+**Contact:** [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)
+
+Let's discuss how we can work together! 🚀
 
 ---
 
