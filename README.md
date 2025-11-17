@@ -2,10 +2,12 @@
 
 > **Live Demo**: [https://machgari-mvp.vercel.app](https://machgari-mvp.vercel.app)
 
+⚠️ **IMPORTANT**: This is proprietary software. **All Rights Reserved**. Viewing only - no copying, modification, or use without permission. Contact [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com) for licensing.
+
 [![Deploy Status](https://img.shields.io/badge/deploy-success-brightgreen)](https://machgari-mvp.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-blue)](https://react.dev/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)](LICENSE)
 
 ---
 
@@ -315,17 +317,32 @@ These will be addressed in Phase 2 with backend integration.
 
 ---
 
-## � License
+## 📜 License & Copyright
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+**© 2025 Machgari. All Rights Reserved.**
 
-### 📋 Attribution & Usage
+This project and its code are **proprietary and confidential**. 
 
-**If you use this code, please:**
-- ⭐ Star this repository
-- 📧 Give credit to the original author
-- 🔗 Link back to this repo in your project
-- 💬 Let us know about your project at [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)
+### ⚠️ Usage Restrictions
+
+**Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.**
+
+- ❌ **No unauthorized use** - You may NOT use this code without explicit written permission
+- ❌ **No copying** - You may NOT copy, fork, or replicate this code
+- ❌ **No modification** - You may NOT modify or create derivative works
+- ❌ **No distribution** - You may NOT distribute or share this code
+
+### ✅ Viewing Only
+
+This repository is **public for portfolio demonstration purposes only**. You may:
+- ✅ View the code for learning
+- ✅ View the live demo at [machgari-mvp.vercel.app](https://machgari-mvp.vercel.app)
+- ✅ Star the repository
+
+### � License Requests
+
+For licensing inquiries or permission to use this code, contact:
+**[24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)**
 
 ---
 
