@@ -331,10 +331,10 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📞 Contact & Support
 
-- **Issues**: [GitHub Issues](https://github.com/Wasik-Yousha/Machgari-MVP/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Wasik-Yousha/Machgari-MVP/discussions)
+
+- **Discussions**: [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)
 - **Email**: [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)
-- **Feature Requests**: [Submit Ideas](https://github.com/Wasik-Yousha/Machgari-MVP/issues)
+
 
 ⭐ **If this project helped you, please star it and share!**
 
