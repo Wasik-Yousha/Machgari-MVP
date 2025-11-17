@@ -67,7 +67,6 @@ An open-access, completely **free** smart AI assistant that can answer any quest
 - ⚡ Instant detailed answers
 - 📚 Vast knowledge base (fish industry, markets, prices, farming methods)
 - 🎯 Personalized advice
-- 💯 Completely free forever
 
 **What You Can Ask:**
 - 🐟 Fish-related information
