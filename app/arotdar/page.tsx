@@ -164,7 +164,7 @@ export default function ArotdardPage() {
         )}
 
         <Tabs defaultValue="transactions" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-8">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto">
             <TabsTrigger value="transactions" className="text-lg py-3">
               লেনদেন ব্যবস্থাপনা
             </TabsTrigger>

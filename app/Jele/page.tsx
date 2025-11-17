@@ -138,7 +138,7 @@ export default function jelePage() {
         )}
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-8">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto">
             <TabsTrigger value="my-fish" className="text-lg py-3">
               আমার ধরা মাছ
             </TabsTrigger>

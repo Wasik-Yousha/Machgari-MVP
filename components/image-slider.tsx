@@ -84,10 +84,7 @@ export function ImageSlider() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white p-4">
             <h2 className="text-4xl md:text-6xl font-bold text-center mb-4 md:mb-8">{slide.title}</h2>
-            <p className="text-xl md:text-3xl text-center mb-8 md:mb-10 max-w-4xl">{slide.description}</p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-2xl py-7 px-10">
-              এখন কিনুন
-            </Button>
+            <p className="text-xl md:text-3xl text-center max-w-4xl">{slide.description}</p>
           </div>
         </div>
       ))}
