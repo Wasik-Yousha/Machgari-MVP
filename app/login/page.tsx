@@ -67,6 +67,11 @@ const handleSubmit = async (e: React.FormEvent) => {
               <CardDescription className="text-lg">
                 {selectedRole ? `${selectedRole} হিসাবে লগইন করুন` : "আপনার ব্যবহারকারী ধরন নির্বাচন করুন"}
               </CardDescription>
+              <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-lg">
+                <p className="text-sm text-blue-700 dark:text-blue-300">
+                  📝 ডেমো জন্য যেকোনো তথ্য দিন - কোনো প্রমাণীকরণ প্রয়োজন নেই
+                </p>
+              </div>
             </CardHeader>
             <CardContent>
               {!selectedRole ? (
