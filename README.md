@@ -315,16 +315,28 @@ These will be addressed in Phase 2 with backend integration.
 
 ---
 
-## 📞 Support & Contact
+## � License
 
-- **Issues**: [GitHub Issues](https://github.com/Wasik-Yousha/Machgari-MVP/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Wasik-Yousha/Machgari-MVP/discussions)
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### 📋 Attribution & Usage
+
+**If you use this code, please:**
+- ⭐ Star this repository
+- 📧 Give credit to the original author
+- 🔗 Link back to this repo in your project
+- 💬 Let us know about your project at [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)
 
 ---
 
-## 📜 License
+## 📞 Contact & Support
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+- **Issues**: [GitHub Issues](https://github.com/Wasik-Yousha/Machgari-MVP/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Wasik-Yousha/Machgari-MVP/discussions)
+- **Email**: [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)
+- **Feature Requests**: [Submit Ideas](https://github.com/Wasik-Yousha/Machgari-MVP/issues)
+
+⭐ **If this project helped you, please star it and share!**
 
 ---
 
@@ -351,5 +363,11 @@ If you find this project useful, please consider giving it a ⭐ on GitHub!
 **[Live Demo](https://machgari-mvp.vercel.app)** • **[Report Bug](https://github.com/Wasik-Yousha/Machgari-MVP/issues)** • **[Request Feature](https://github.com/Wasik-Yousha/Machgari-MVP/issues)**
 
 Made with ❤️ for Bangladesh's fishing community
+
+---
+
+**© 2025 Machgari | Built by [Wasik Yousha](https://github.com/Wasik-Yousha)**
+
+*If this project helped you, please ⭐ star it and share!*
 
 </div>
