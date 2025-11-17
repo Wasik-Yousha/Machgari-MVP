@@ -40,7 +40,6 @@ To eliminate middlemen, ensure fair pricing for fishermen, enable transparent ma
   - **Voice command support** - just speak, AI answers!
 
 ### 🏪 For Wholesalers (আড়তদার)
-### 🏪 For Wholesalers (আড়তদার)
 
 - **🐠 Fish Inventory Browser**: View available fish from all fishermen in your area
 - **💵 Price Management**: Set competitive wholesale prices (within regulatory limits)
