@@ -8,7 +8,6 @@ import { UserProvider } from "@/contexts/user-context"
 import { FishDataProvider } from "@/contexts/fish-data-context"
 import { FarmingProfileProvider } from "@/contexts/farming-profile-context"
 import { TransactionsProvider } from "@/contexts/transactions-context"
-import { LocalStorageDebugger } from "@/components/local-storage-debugger"
 
 const hindSiliguri = Hind_Siliguri({ 
   subsets: ["latin"],
@@ -37,8 +36,6 @@ export default function RootLayout({
               <TransactionsProvider>
                 {/* Farming profile may reference both fish and transactions */}
                 <FarmingProfileProvider>
-                  {/* Debugger should be last to access all contexts */}
-                  <LocalStorageDebugger />
                   {children}
                   <LiveChatButton />
                 </FarmingProfileProvider>
