@@ -18,25 +18,31 @@ export function MarketSummarySection() {
 
   // Update market data
   useEffect(() => {
-    // Get top fish data
-    const marketData = getMarketData()
-    const basePrices = getBasePrices()
-    
-    // Format and sort by price change (most change first)
-    const formattedData = Object.entries(basePrices)
-      .map(([fishName, basePrice]) => {
-        const marketInfo = marketData.find(m => m.fishName === fishName)
-        return {
-          name: fishName,
-          price: marketInfo?.currentPrice || basePrice,
-          unit: "কেজি",
-          change: marketInfo?.priceChange || 0
-        }
-      })
-      .sort((a, b) => Math.abs(b.change) - Math.abs(a.change))
-      .slice(0, 5) // Top 5 fish with most price change
-    
-    setTopFish(formattedData)
+    try {
+      // Get top fish data
+      const marketData = getMarketData()
+      const basePrices = getBasePrices()
+      
+      // Format and sort by price change (most change first)
+      const formattedData = Object.entries(basePrices)
+        .map(([fishName, basePrice]) => {
+          const marketInfo = marketData.find(m => m.fishName === fishName)
+          return {
+            name: String(fishName),
+            price: Number(marketInfo?.currentPrice || basePrice),
+            unit: "কেজি",
+            change: Number(marketInfo?.priceChange || 0)
+          }
+        })
+        .sort((a, b) => Math.abs(b.change) - Math.abs(a.change))
+        .slice(0, 5) // Top 5 fish with most price change
+      
+      console.log('[MarketSummary] Formatted data:', formattedData)
+      setTopFish(formattedData)
+    } catch (error) {
+      console.error('[MarketSummary] Error formatting data:', error)
+      setTopFish([])
+    }
   }, [getMarketData, getBasePrices])
 
   return (
@@ -56,33 +62,41 @@ export function MarketSummarySection() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {topFish.map((fish, index) => (
-                <TableRow key={index}>
-                  <TableCell className="font-medium">{fish.name}</TableCell>
-                  <TableCell className="text-right">{fish.price}/{fish.unit}</TableCell>
-                  <TableCell className="text-right">
-                    <span
-                      className={`inline-flex items-center ${
-                        fish.change > 0
-                          ? "text-green-500"
-                          : fish.change < 0
-                          ? "text-red-500"
-                          : "text-gray-500"
-                      }`}
-                    >
-                      {fish.change > 0 ? (
-                        <TrendingUp className="mr-1 h-4 w-4" />
-                      ) : fish.change < 0 ? (
-                        <TrendingDown className="mr-1 h-4 w-4" />
-                      ) : (
-                        <Minus className="mr-1 h-4 w-4" />
-                      )}
-                      {fish.change > 0 ? "+" : ""}
-                      {fish.change.toFixed(1)}%
-                    </span>
-                  </TableCell>
-                </TableRow>
-              ))}
+              {topFish.map((fish, index) => {
+                // Safely extract and convert values
+                const fishName = String(fish?.name || '')
+                const fishPrice = Number(fish?.price || 0)
+                const fishUnit = String(fish?.unit || 'কেজি')
+                const fishChange = Number(fish?.change || 0)
+                
+                return (
+                  <TableRow key={index}>
+                    <TableCell className="font-medium">{fishName}</TableCell>
+                    <TableCell className="text-right">{fishPrice}/{fishUnit}</TableCell>
+                    <TableCell className="text-right">
+                      <span
+                        className={`inline-flex items-center ${
+                          fishChange > 0
+                            ? "text-green-500"
+                            : fishChange < 0
+                            ? "text-red-500"
+                            : "text-gray-500"
+                        }`}
+                      >
+                        {fishChange > 0 ? (
+                          <TrendingUp className="mr-1 h-4 w-4" />
+                        ) : fishChange < 0 ? (
+                          <TrendingDown className="mr-1 h-4 w-4" />
+                        ) : (
+                          <Minus className="mr-1 h-4 w-4" />
+                        )}
+                        {fishChange > 0 && "+"}
+                        {fishChange.toFixed(1)}%
+                      </span>
+                    </TableCell>
+                  </TableRow>
+                )
+              })}
             </TableBody>
           </Table>
         </CardContent>
