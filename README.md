@@ -11,7 +11,7 @@
 
 ---
 
-## 🌊 About Machgari
+## About Machgari
 
 **Machgari** is Bangladesh's first integrated digital fish transport and market management platform. We're revolutionizing the traditional fish market by connecting **fishermen (জেলে)**, **wholesalers (আড়তদার)**, and **government regulators** in a transparent, efficient digital ecosystem.
 
