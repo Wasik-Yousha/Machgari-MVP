@@ -20,17 +20,17 @@ To eliminate middlemen, ensure fair pricing for fishermen, enable transparent ma
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### 👨‍🌾 For Fishermen (জেলে)
 
-- **📸 Easy Fish Upload**: Capture fish photos with mobile camera, add quantity and quality details
-- **💰 Fair Price Guarantee**: Get minimum base prices set by government + real-time market rates
-- **🤝 Direct Wholesaler Connection**: View all nearby wholesalers, compare offers, choose the best deal
-- **📊 Sales Record Keeping**: Digital record of every transaction with monthly/yearly income tracking
-- **📈 Market Price Analysis**: See price trends, know the best time to sell
-- **🔒 Secure Transactions**: Complete digital payment system with instant money transfer
-- **🤖 AI Super Assistant - 24/7**: Government-approved AI advisor providing:
+- **Easy Fish Upload**: Capture fish photos with mobile camera, add quantity and quality details
+- **Fair Price Guarantee**: Get minimum base prices set by government + real-time market rates
+- **Direct Wholesaler Connection**: View all nearby wholesalers, compare offers, choose the best deal
+- **Sales Record Keeping**: Digital record of every transaction with monthly/yearly income tracking
+- **Market Price Analysis**: See price trends, know the best time to sell
+- **Secure Transactions**: Complete digital payment system with instant money transfer
+- **🤖AI Super Assistant - 24/7**: Government-approved AI advisor providing:
   - Fishing advice (when, where, how to fish)
   - Price guidance (what should be the right price)
   - Weather information (sea/river conditions)
@@ -39,60 +39,60 @@ To eliminate middlemen, ensure fair pricing for fishermen, enable transparent ma
   - Training & education (modern fishing methods)
   - **Voice command support** - just speak, AI answers!
 
-### 🏪 For Wholesalers (আড়তদার)
+### 🏪For Wholesalers (আড়তদার)
 
-- **🐠 Fish Inventory Browser**: View available fish from all fishermen in your area
-- **💵 Price Management**: Set competitive wholesale prices (within regulatory limits)
-- **📝 Transaction Tracking**: Monitor all purchases from offer to delivery
-- **🎯 Business Analytics**: Daily, weekly, monthly sales reports with profit analysis
-- **📦 Inventory Management**: Track stock levels and freshness timelines
-- **📍 Location-Based Services**: Find nearby fishermen, calculate transport costs
+- **Fish Inventory Browser**: View available fish from all fishermen in your area
+- **Price Management**: Set competitive wholesale prices (within regulatory limits)
+- **Transaction Tracking**: Monitor all purchases from offer to delivery
+- **Business Analytics**: Daily, weekly, monthly sales reports with profit analysis
+- **Inventory Management**: Track stock levels and freshness timelines
+- **Location-Based Services**: Find nearby fishermen, calculate transport costs
 
 ### 🏛️ For Government Officials
 
-- **📊 Real-Time Market Monitoring**: Live dashboard of entire fish market nationwide
-- **💲 Price Control System**: Set base prices and max/min price limits
-- **📈 Detailed Report Generation**: Regional, species-based, time-based analytics
-- **👥 Stakeholder Management**: View all fishermen and wholesalers, manage licenses
-- **📉 Trend Analysis**: Seasonal production trends, price patterns, forecasting
-- **🛡️ Quality Control**: Monitor food safety standards and product quality
+- **Real-Time Market Monitoring**: Live dashboard of entire fish market nationwide
+- **Price Control System**: Set base prices and max/min price limits
+- **Detailed Report Generation**: Regional, species-based, time-based analytics
+- **Stakeholder Management**: View all fishermen and wholesalers, manage licenses
+- **Trend Analysis**: Seasonal production trends, price patterns, forecasting
+- **Quality Control**: Monitor food safety standards and product quality
 
 ### 🤖 General AI Assistant (For Everyone)
 
 An open-access, completely **free** smart AI assistant that can answer any question instantly:
 
 **Key Features:**
-- 🗣️ Natural conversation in Bengali & English
-- 🌍 Multilingual support (understands regional dialects)
-- ⚡ Instant detailed answers
-- 📚 Vast knowledge base (fish industry, markets, prices, farming methods)
-- 🎯 Personalized advice
+- Natural conversation in Bengali & English
+- Multilingual support (understands regional dialects)
+- Instant detailed answers
+- Vast knowledge base (fish industry, markets, prices, farming methods)
+- Personalized advice
 
 **What You Can Ask:**
-- 🐟 Fish-related information
-- 📊 Market & price data
-- 🌾 Fish farming methods
-- 💼 Business advice
-- 🏛️ Government policies & licenses
-- 🌦️ Weather & environment
-- 🔧 Technology & equipment
-- 📖 Education & training
+- Fish-related information
+- Market & price data
+- Fish farming methods
+- Business advice
+- Government policies & licenses
+- Weather & environment
+- Technology & equipment
+- Education & training
 
 ---
 
 ## 🎨 Design Highlights
 
-- **🎨 Brand Colors**: Orange (#FF6B35) & Blue (#1D7AA2) - representing sunset on water
-- **🌙 Dark Mode**: Full dark mode support for comfortable viewing
-- **📱 Mobile-First**: Optimized for smartphones (primary device for fishermen)
-- **🇧🇩 Bengali Interface**: Complete Bangla UI with Hind Siliguri font
-- **♿ Accessible**: WCAG compliant with proper color contrast
-- **⚡ Fast**: Optimized performance with Next.js 15
-- **📴 Offline-Ready**: Works with localStorage for MVP demos
+- **Brand Colors**: Orange (#FF6B35) & Blue (#1D7AA2) - representing sunset on water
+- **Dark Mode**: Full dark mode support for comfortable viewing
+- **Mobile-First**: Optimized for smartphones (primary device for fishermen)
+- **Bengali Interface**: Complete Bangla UI with Hind Siliguri font
+- **Accessible**: WCAG compliant with proper color contrast
+- **Fast**: Optimized performance with Next.js 15
+- **Offline-Ready**: Works with localStorage for MVP demos
 
 ---
 
-## 🚀 Technology Stack
+## Technology Stack
 
 | Category | Technology |
 |----------|-----------|
@@ -111,7 +111,7 @@ An open-access, completely **free** smart AI assistant that can answer any quest
 
 ---
 
-## 🎮 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18.0 or higher
@@ -149,7 +149,7 @@ pnpm start
 
 ---
 
-## 🎭 Demo & Testing
+## Demo & Testing
 
 ### 🌐 Live Demo
 **Visit**: [https://machgari-mvp.vercel.app](https://machgari-mvp.vercel.app)
@@ -172,7 +172,7 @@ The MVP includes 20+ pre-populated fish entries with:
 
 ---
 
-## 📱 Pages & Routes
+## Pages & Routes
 
 | Route | Description |
 |-------|-------------|
@@ -185,24 +185,24 @@ The MVP includes 20+ pre-populated fish entries with:
 
 ---
 
-## 🎯 Platform Benefits
+## Platform Benefits
 
-### ✅ Complete Transparency
+### Complete Transparency
 Every transaction is digitally recorded and visible to all parties
 
-### 📱 Easy to Use
+### Easy to Use
 Mobile app & web platform - accessible anytime, anywhere
 
-### ⏰ 24/7 Service
+### 24/7 Service
 Use the platform and get AI assistance at any time of day
 
-### 💡 Fair Pricing
+### Fair Pricing
 Government base prices ensure minimum fair value for fishermen
 
-### 🚫 No Middlemen
+### No Middlemen
 Direct connection between fishermen and wholesalers increases profit margins
 
-### 📊 Data-Driven Decisions
+### Data-Driven Decisions
 Real-time analytics help all stakeholders make informed choices
 
 ---
@@ -218,7 +218,7 @@ Real-time analytics help all stakeholders make informed choices
 - [x] Dark mode support
 - [x] Vercel deployment
 
-### Phase 2 (Next) 🚧
+### Phase 2 (Next) 
 - [ ] Backend API with database integration
 - [ ] User authentication & authorization
 - [ ] Real payment gateway integration
@@ -226,7 +226,7 @@ Real-time analytics help all stakeholders make informed choices
 - [ ] Advanced ML-based price predictions
 - [ ] Mobile apps (Android/iOS)
 
-### Phase 3 (Future) 🔮
+### Phase 3 (Future) 
 - [ ] Blockchain for transaction verification
 - [ ] IoT integration for fish quality sensors
 - [ ] Multi-language support (English, Hindi)
@@ -287,11 +287,11 @@ machgari/
 
 ### Why LocalStorage?
 This MVP uses browser localStorage for data persistence, making it:
-- ✅ **Backend-independent**: No server setup needed
-- ✅ **Competition-ready**: Perfect for hackathons and demos
-- ✅ **Instant setup**: Clone and run immediately
-- ✅ **Predictable**: Consistent demo experience
-- ✅ **Educational**: Clear code for learning purposes
+-  **Backend-independent**: No server setup needed
+-  **Competition-ready**: Perfect for hackathons and demos
+-  **Instant setup**: Clone and run immediately
+-  **Predictable**: Consistent demo experience
+-  **Educational**: Clear code for learning purposes
 
 ### Sample Data Included
 Pre-loaded with 20+ diverse fish entries featuring:
@@ -303,7 +303,7 @@ Pre-loaded with 20+ diverse fish entries featuring:
 
 ---
 
-## 🐛 Known Limitations (MVP)
+## Known Limitations (MVP)
 
 - Data stored in browser (clears on cache clear)
 - No real user authentication
@@ -325,18 +325,18 @@ This project and its code are **proprietary and confidential**.
 
 **Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.**
 
-- ❌ **No unauthorized use** - You may NOT use this code without explicit written permission
-- ❌ **No copying** - You may NOT copy, fork, or replicate this code
-- ❌ **No modification** - You may NOT modify or create derivative works
-- ❌ **No distribution** - You may NOT distribute or share this code
+-  **No unauthorized use** - You may NOT use this code without explicit written permission
+-  **No copying** - You may NOT copy, fork, or replicate this code
+-  **No modification** - You may NOT modify or create derivative works
+-  **No distribution** - You may NOT distribute or share this code
 
-### ✅ What You Can Do
+###  What You Can Do
 
-- 📖 **View and learn** from the code
-- ⭐ **Star the repository** if you find it useful
-- 🌐 **Try the live demo** at [machgari-mvp.vercel.app](https://machgari-mvp.vercel.app)
-- 💬 **Provide feedback** and suggestions
-- 📧 **Contact me** for collaboration opportunities
+-  **View and learn** from the code
+-  **Star the repository** if you find it useful
+-  **Try the live demo** at [machgari-mvp.vercel.app](https://machgari-mvp.vercel.app)
+-  **Provide feedback** and suggestions
+-  **Contact me** for collaboration opportunities
 
 ### 📋 Restrictions
 
@@ -363,11 +363,11 @@ Let's discuss how we can work together! 🚀
 - **Email**: [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)
 
 
-⭐ **If this project helped you, please star it and share!**
+ **If this project helped you, please star it and share!**
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Next.js Team** - Amazing React framework
 - **Vercel** - Seamless deployment platform
