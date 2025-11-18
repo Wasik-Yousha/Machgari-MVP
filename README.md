@@ -209,7 +209,7 @@ Real-time analytics help all stakeholders make informed choices
 
 ## 🗺️ Roadmap
 
-### Phase 1 (Current - MVP) ✅
+### Phase 1 (Current - MVP) 
 - [x] Client-side application with localStorage
 - [x] Full Bengali interface
 - [x] Role-based dashboards (Fisherman, Wholesaler, Government)
@@ -352,7 +352,7 @@ Interested in using this project or collaborating? I'd love to hear from you!
 
 **Contact:** [24engineers.tech@gmail.com](mailto:24engineers.tech@gmail.com)
 
-Let's discuss how we can work together! 🚀
+Let's discuss how we can work together! 
 
 ---
 
@@ -377,7 +377,7 @@ Let's discuss how we can work together! 🚀
 
 ---
 
-## 🌟 Star History
+## Star History
 
 If you find this project useful, please consider giving it a ⭐ on GitHub!
 
@@ -389,7 +389,7 @@ If you find this project useful, please consider giving it a ⭐ on GitHub!
 
 **[Live Demo](https://machgari-mvp.vercel.app)** • **[Report Bug](https://github.com/Wasik-Yousha/Machgari-MVP/issues)** • **[Request Feature](https://github.com/Wasik-Yousha/Machgari-MVP/issues)**
 
-Made with ❤️ for Bangladesh's fishing community
+Made for Bangladesh's fishing community
 
 ---
 
